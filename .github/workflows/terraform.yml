@@ -3,7 +3,7 @@ on:
  workflow_dispatch:
    inputs: 
      action:
-       description: "Select your choice"
+       descritpion: "Select your choice"
        required: true
        type: choice
        options:
