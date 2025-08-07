@@ -1,6 +1,6 @@
 name: Terraform
 on:
- workflow_dispatch:
+  workflow_dispatch:
    inputs: 
      action:
        descritpion: "Select your choice"
