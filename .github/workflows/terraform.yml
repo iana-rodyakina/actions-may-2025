@@ -54,7 +54,7 @@ jobs:
         aws-region: us-east-2
 
     - name: Init
-      run: terraform init
+      run: terraform init -backend-config=key="${{ inputs.region }}/terraform.tfstate"
 
     - name: Apply or Destroy
       run: |
