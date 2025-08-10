@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs: 
       action:
-        descritpion: "Select your choice"
+        description: "Select your choice"
         required: true
         type: choice
         options:
@@ -35,7 +35,7 @@ jobs:
 
     - name: Apply or Destroy
       run: |
-        if [[ "${{ inputs.actions }}"== "apply" ]]
+        if [[ "${{ inputs.action }}"== "apply" ]]
         then
           terraform apply -auto-approve
         else
